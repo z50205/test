@@ -14,15 +14,15 @@ $(document).ready(function () {
             console.log('index:' + index + ' 按到了喔');
 
             // 抓出 img 中的第 index 個
-            var video = $('video:eq(' + index + ' )');
+            var iframe = $('iframe:eq(' + index + ' )');
 
             // 判斷img是否有 visible 屬性
-            if (video.is(":visible")) {
+            if (iframe.is(":visible")) {
                 // 將 img 在網頁中隱藏
-                video.hide();
+                iframe.hide();
             } else {
                 // 將 img 在網頁中顯示
-                video.show();
+                iframe.show();
             }
         });
     });
